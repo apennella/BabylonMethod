@@ -7,27 +7,28 @@ public class Babylon {
 		double guess;
 		double number;
 		double error;
+		double square;
 		Scanner keyboard = new Scanner(System.in);
 		System.out.print("Please enter the number you wish to take the square root of");
 		number = keyboard.nextDouble();
 		guess = number/2;
 		System.out.println("Please enter your accaeptable percent error:");
 		error = keyboard.nextDouble();
-		Babylon babylon = new Babylon(guess, number, error);
-		System.out.println(error + " " + guess + " " + number);
+		square = Math.sqrt(number);
+		Babylon babylon = new Babylon(guess, number, error, square);
+		System.out.println(error + " " + guess + " " + number+ " " +square);
+		
 	}
 	double guess;
 	double number;
 	double error;
-	public Babylon(double x, double y, double z){
-		guess= x;
-		number= y;
-		error = z;	
-		System.out.println(error + " " + guess + " " + number);
-	}
-	public double compute(){
-		
-		
-	}
+	double square;
+	public Babylon(double w,double x, double y, double z){
+		guess= w;
+		number= x;
+		error = y;
+		square = z;
+		System.out.println(error + " " + guess + " " + number + " " +square);
 	}
 
+}
