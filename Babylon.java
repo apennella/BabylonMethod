@@ -15,28 +15,17 @@ public class Babylon {
 		System.out.println("Please enter your accaeptable percent error:");
 		error = keyboard.nextDouble();
 		System.out.println(error + " " + guess + " " + number);
-		
-		/**public int getGuess(){
-			return guess;
-		}
-		public double getNumber(){
-			return number;
-		}
-		public double getError(){
-			return error;
-		}*/
-
-
+		Babylon babylon = new Babylon(guess, number, error);
 	}
-	/**int guess;
+	int guess;
 	double number;
 	double error;
-	public Babylon(){
-		guess = getGuess();
-		error = getError();
-		number= getNumber();
+	public Babylon(int x, double y, double z){
+		guess= x;
+		number= y;
+		error = z;
+		System.out.println(error + " " + guess + " " + number);
 	}
-	System.out.println(error + " " + number " " + guess + "class");
-	*/
-}
+	
+	}
 
